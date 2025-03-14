@@ -22,7 +22,7 @@ function Student() {
 
       try {
         const res = await axios.get(
-          `http://localhost:3000/api/v1/getStudent/${classId}`,
+          `https://attendancebackend-dktt.onrender.com/api/v1/getStudent/${classId}`,
           {
             headers: { Authorization: `Bearer ${token}` },
             withCredentials: true,
