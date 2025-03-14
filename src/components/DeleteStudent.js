@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
-import { toast, Toaster } from "react-toastify";
+import { toast } from "react-toastify";
 import { useState } from "react";
 
 function DeleteStudent() {
