@@ -68,7 +68,7 @@ function Studentattendance() {
               className="flex justify-between items-center bg-transparent border-b-2 border-[#e0b0ff] text-[#e0b0ff] p-4 mb-4 hover:bg-[#4b0078] transition-transform transform hover:scale-105 rounded-lg"
             >
               <h4 className="text-lg font-semibold">{stu.studentName}</h4>
-              <p>{stu.attendancePercentage}%</p>
+              <p>{stu.attendancePercentage}</p>
             </div>
           ))
         ) : (
