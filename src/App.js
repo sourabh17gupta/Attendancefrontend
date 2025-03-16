@@ -15,7 +15,7 @@ import AddStudent from "./components/AddStudent";
 import DeleteStudent from "./components/DeleteStudent";
 import Student from "./components/Student";
 import { Toaster } from "react-hot-toast";
-
+import Studentattendance from "./components/Studentattendance";
 
 function App() {
   return (
@@ -36,6 +36,7 @@ function App() {
         <Route path="/AddStudent" element={<AddStudent/>}></Route>
         <Route path="/DeleteStudent" element={<DeleteStudent/>}></Route>
         <Route path="/Student" element={<Student/>}></Route>
+        <Route path="/Studentattendance" element={<Studentattendance/>}></Route>
 
      </Routes>
     </div>

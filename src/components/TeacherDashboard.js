@@ -45,6 +45,11 @@ function TeacherDashboard() {
   const AttendanceHandler = (subjectId, subjectName) => {
     navigate("/Attendance", { state: { subjectId, teacherId, subjectName } });
   };
+  const StudentAttendanceHandler = (subjectId, subjectName) => {
+    navigate("/Studentattendance", { state: { subjectId, teacherId, subjectName } });
+  };
+
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#1a1a2e] to-[#16213e] text-white p-8">
@@ -73,6 +78,12 @@ function TeacherDashboard() {
                     className="bg-[#0f3460] text-white py-2 px-4 rounded-lg hover:bg-[#0e2956] transition-transform transform hover:scale-105"
                   >
                     Attendance
+                  </button>
+                  <button
+                    onClick={() => StudentAttendanceHandler(sub._id, sub.name)}
+                    className="bg-[#0f3460] text-white py-2 px-4 rounded-lg hover:bg-[#0e2956] transition-transform transform hover:scale-105"
+                  >
+                    Student
                   </button>
                 </div>
               </div>
